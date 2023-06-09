@@ -10,6 +10,9 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
+/**
+ * TM: xid 文件维护事务状态, 提供接口供其他模块创建以及查询事务的状态
+ */
 public interface TransactionManager {
     // 变量默认类型: public static final
     // XID 文件头的长度(Byte)
